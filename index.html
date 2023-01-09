@@ -9,11 +9,11 @@
     <title>Gabrielle Essence Parfum</title>
     <body>
         <main>
-            
-            <div class="image">
-                    <img src="./images/image-product-mobile.jpg" alt="Perfume Image" id="perfume-img">
-                    <img src="./images/image-product-desktop.jpg" alt="Perfume Image" id="perfume-desktop">
-            </div>
+            <picture class="image">
+                <source media="(min-width: 950px)" srcset="./images/image-product-desktop.jpg">
+                <img src="./images/image-product-mobile.jpg" alt="perfume" id="perfume-img">
+            </picture>
+
             <div id="card-container">
                 <p id="perfume">
                     Perfume
