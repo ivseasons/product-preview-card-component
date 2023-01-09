@@ -1,0 +1,143 @@
+/*
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+font-family: 'Fraunces', serif;
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+main {
+    background: white;
+    margin: 2em auto;
+    border-radius: .5em;
+    width: 350px;
+}
+
+#card-container {
+    padding: 1.5em;
+    padding-top: 0;  
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    margin: .3em 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding-left: .3em;
+    font-weight: bold;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+.image {
+    padding: 0;
+    margin: 0;
+    
+}
+
+#perfume-img {
+    height: 250px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+#perfume-desktop {
+    display: none;
+}
+
+#perfume {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: .8em;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+#desc {
+    line-height: 1.5em;
+    padding-bottom: .5em;
+}
+
+.flex {
+    display: flex;
+}
+
+#price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+#org-price {
+    margin-top: .6em;
+    padding-left: 1em;
+    text-decoration: line-through;
+}
+
+#submit {
+    background:hsl(158, 36%, 37%);
+    padding: 1em;
+    text-align: center;
+    border-radius: .5em;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #295746;
+}
+
+@media (min-width: 950px) {
+  
+    main {
+        display: flex;
+        width: 650px;
+        justify-content: center;
+        margin: 10em auto;
+    }
+
+    #perfume-img {
+        display: none;
+    }
+
+    #perfume-desktop {
+        display: unset;
+        width: 90%;
+        border-top-left-radius: .5em;
+        border-bottom-left-radius: .5em;
+        height: 100%;
+    }
+
+    #card-container {
+        width: 70%;
+        padding: 1.6em 2em 0 0;
+    }
+}
+
+
+
+
